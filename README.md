@@ -44,10 +44,6 @@ Plot the performance plot
 
 Evaluate the model with the testing data.
 
-## PROGRAM
-### Name: ANU VARSHINI M B
-### Register Number: 212223240010
-```python
 # Name:S LALIT CHANDRAN
 # Register Number:212223240077
 class NeuralNet(nn.Module):
