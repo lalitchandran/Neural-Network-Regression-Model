@@ -46,7 +46,7 @@ Evaluate the model with the testing data.
 
 # Name:S LALIT CHANDRAN
 # Register Number:212223240077
-'''
+```
 class NeuralNet(nn.Module):
   def __init__(self):
     super().__init__()
@@ -60,7 +60,7 @@ class NeuralNet(nn.Module):
     x = self.relu(self.fc2(x))
     x = self.fc3(x) # No activation here since it's a regression task
     return x
-'''
+
 # Initialize the Model, Loss Function, and Optimizer
 ai_brain = NeuralNet ()
 criterion = nn.MSELoss ()
@@ -77,22 +77,24 @@ def train_model(ai_brain, X_train, y_train, criterion, optimizer, epochs=2000):
         if epoch % 200 == 0:
             print(f'Epoch [{epoch}/{epochs}], Loss: {loss.item():.6f}')
 ```
-## Dataset Information
+            
+##Dataset Information
+![Screenshot 2025-03-10 090641](https://github.com/user-attachments/assets/82a27bae-0c7a-49d8-92f3-62b2d4a20556)
 
-![image](https://github.com/user-attachments/assets/008d7f96-9cba-4d9f-a9bf-69ffbb64eef3)
 
 
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
 
-![image](https://github.com/user-attachments/assets/ca54aad2-213d-43da-9b9c-5501a12441db)
+![Screenshot 2025-03-10 090727](https://github.com/user-attachments/assets/6928291a-f70a-400b-8a36-20dcdc74053c)
+
 
 
 
 ### New Sample Data Prediction
 
-![image](https://github.com/user-attachments/assets/e211ce78-1e5e-406e-8eec-782a87f9f7ed)
+![Screenshot 2025-03-10 091133](https://github.com/user-attachments/assets/a50bef1d-6b64-4df2-9d21-a20f6b493840)
 
 
 
