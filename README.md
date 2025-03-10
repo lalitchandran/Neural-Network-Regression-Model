@@ -46,6 +46,7 @@ Evaluate the model with the testing data.
 
 # Name:S LALIT CHANDRAN
 # Register Number:212223240077
+'''
 class NeuralNet(nn.Module):
   def __init__(self):
     super().__init__()
@@ -59,6 +60,7 @@ class NeuralNet(nn.Module):
     x = self.relu(self.fc2(x))
     x = self.fc3(x) # No activation here since it's a regression task
     return x
+'''
 # Initialize the Model, Loss Function, and Optimizer
 ai_brain = NeuralNet ()
 criterion = nn.MSELoss ()
